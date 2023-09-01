@@ -64,4 +64,4 @@ app.get('/signup', (req, res) =>{
 
 
 //listen on port 3000
-app.listen(port, () => console.info(`listening on port ${port}`))
+app.listen(process.env.PORT || port, () => console.info(`listening on port ${port}`))
